@@ -1,0 +1,44 @@
+  <!DOCTYPE html>
+  <html>
+    <head>
+      <!-- Title of the page -->
+      <title>6339</title>
+    </head>
+      <body>
+              <!-- list of files in bucket query -->
+        <form action="/task" method="POST">
+        <div align="center"> <big> ASSOCIATION RULE MINING </big> </div>
+        <table>
+    <tr>
+        <td>
+            <br />Support:<input type="text" name="sup" style="border: 1px solid black">
+        </td>
+        <td>
+            <br />Confidence:<input type="text" name="confi" style="border: 1px solid black">
+        </td>
+
+          <td>
+            <br />Admission Dig:<input type="text" name="Adig" style="border: 1px solid black">
+        </td>
+    </tr>
+   </table>
+   <br>
+             <div align="justify"><input type="submit" style="width:150px; height:150px;" value="Submit"></div>
+         <div align="justify">    <table style="border: 1px solid black">
+<!--           <br>
+          <br>
+          <br>
+          <tbody>
+            <tr>
+            </tr>
+            {% for row in bucket_list %}
+               <tr>
+                <td><input type="checkbox" name="features" value={{ row['name'] }}> <td>
+                 <td>{{ row['name'] }}</td>
+               </tr>
+            {% endfor %}
+          </tbody> -->
+          </table></div>
+        </form>
+    </body>
+  </html>

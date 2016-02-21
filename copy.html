@@ -1,0 +1,29 @@
+  <!DOCTYPE html>
+  <html>
+    <head>
+      <!-- Title of the page -->
+      <title>6339</title>
+    </head>
+      <body>
+              <!-- list of files in bucket query -->
+        <div align="center"> <big> ASSOCITION RULE MINING </big> </div>
+          <table style="border: 1px solid black">
+        <tbody>
+          <tr>
+            <th width="35%" style="background-color: #CCFFCC; margin: 5px">A</th>
+            <th style="background-color: #CCFFCC; margin: 5px">B</th>
+            <th style="background-color: #CCFFCC; margin: 5px">Cof</th>
+            <th style="background-color: #CCFFCC; margin: 5px">sup</th>
+          </tr>
+          {% for row in rules_list %}
+             <tr>
+               <td>{{ row['A'] }}</td>
+               <td>{{ row['B'] }}</td>
+               <td>{{ row['conf'] }}</td>
+               <td>{{ row['sup'] }}</td>
+             </tr>
+          {% endfor %}
+        </tbody>
+        </table>
+    </body>
+  </html>

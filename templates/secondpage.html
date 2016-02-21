@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>Clinical Decision Support System</title>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script type="text/javascript" src="https://cdn.datatables.net/1.10.10/js/jquery.dataTables.min.js"></script>
+
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.10.10/css/jquery.dataTables.min.css" />
+
+
+
+    <script type="text/javascript" src="static/baby.js"></script>
+    <script type="text/javascript" src="static/jquery-1.11.3.min.js"></script>
+    <script type="text/javascript" src="static/jquery.dataTables.min.js"></script>
+
+
+    <div align="center"> <th><big> CLINICAL DECISION SUPPORT SYSTEM </big></th> </div>
+</head>
+
+
+
+
+<body style="background-color:#C3BC8A">
+    <table id="example" class="display" cellspacing="0" width="100%">
+        <thead>
+            <tr>
+                <th>A</th>
+                <th>B</th>
+                <th>Cof</th>
+                <th>sup</th>
+                <th>Age</th>
+                <th>sex</th>
+                <th>Race</th>
+            </tr>
+        </thead>
+        <tfoot>
+            <tr>
+                <th>A</th>
+                <th>B</th>
+                <th>Cof</th>
+                <th>sup</th>
+                <th>Age</th>
+                <th>sex</th>
+                <th>Race</th>
+            </tr>
+        </tfoot>
+
+        <tbody>
+           {% for row in rules_list %}
+            <tr>
+
+                <td>{{ row['A'] }}</td>
+                <td>{{ row['B'] }}</td>
+                <td>{{ row['conf'] }}</td>
+                <td>{{ row['sup'] }}</td>
+                <td>{{ row['AGE'] }}</td>
+                <td>{{ row['SEX'] }}</td>
+                <td>{{ row['RACE'] }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+
+  </body>
+</html>

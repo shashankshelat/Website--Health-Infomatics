@@ -1,0 +1,66 @@
+<head>
+    <script type="text/javascript" src="static/document.js"></script>
+</head>
+<section class="container">
+
+    <h2>Light Javascript Table Filter</h2>
+
+    <input type="search" class="light-table-filter" data-table="order-table" data-table-columns="0" placeholder="Filter">
+
+   <table class="order-table table">
+     <thead>
+            <tr>
+                <th width="35%" style="background-color: #CCFFCC; margin: 5px">A</th>
+                <th style="background-color: #CCFFCC; margin: 5px">B</th>
+                <th style="background-color: #CCFFCC; margin: 5px">Cof</th>
+                <th style="background-color: #CCFFCC; margin: 5px">sup</th>
+                <th style="background-color: #CCFFCC; margin: 5px">AGE</th>
+                <th style="background-color: #CCFFCC; margin: 5px">SEX</th>
+                <th style="background-color: #CCFFCC; margin: 5px">RACE</th> 
+            </tr>
+        </thead>       
+       <!--<thead>
+           <tr>
+               <th>Name</th>
+               <th>Email</th>
+               <th>Phone</th>
+               <th>Price</th>
+           </tr>
+       </thead>-->
+       <tbody>
+           <tr>
+               <td>John Doe</td>
+               <td>john.doe@gmail.com</td>
+               <td>0123456789</td>
+               <td>99</td>
+           </tr>
+           <tr>
+               <td>Jane Vanda</td>
+               <td>jane@vanda.org</td>
+               <td>9876543210</td>
+               <td>349</td>
+           </tr>
+           <tr>
+               <td>Alferd Penyworth</td>
+               <td>alfred@batman.com</td>
+               <td>6754328901</td>
+               <td>199</td>
+           </tr>
+
+
+           {% for row in rules_list %}
+           <tr>
+
+               <td>{{ row['A'] }}</td>
+               <td>{{ row['B'] }}</td>
+               <td>{{ row['conf'] }}</td>
+               <td>{{ row['sup'] }}</td>
+               <td>{{ row['AGE'] }}</td>
+               <td>{{ row['SEX'] }}</td>
+               <td>{{ row['RACE'] }}</td>
+           </tr>
+           {% endfor %}
+       </tbody>
+    </table>
+
+</section>
